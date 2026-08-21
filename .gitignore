@@ -11,3 +11,5 @@ wheels/
 
 #环境配置信息
 .env
+
+agent/resource/*
