@@ -1,5 +1,5 @@
 [project]
-name = "heima-agent"
+name = "agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -14,12 +14,13 @@ dependencies = [
     "langchain-tavily>=0.2.18",
     "langgraph-checkpoint-postgres>=3.1.2",
     "langgraph-checkpoint-sqlite>=3.1.1",
+    "mypy>=2.3.1",
     "notebook>=7.6.2",
     "psycopg[binary]>=3.3.4",
 ]
 
 [project.scripts]
-heima-agent = "heima_agent:main"
+agent = "agent:main"
 
 [[tool.uv.index]]
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
