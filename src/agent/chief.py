@@ -6,7 +6,7 @@ from dotenv import load_dotenv,find_dotenv
 from langchain_tavily import TavilySearch
 
 env_file=find_dotenv()
-print(str(env_file))
+# print(str(env_file))
 load_dotenv(env_file)
 DASHSCOPE_API_KEY =getenv("DASHSCOPE_API_KEY")
 

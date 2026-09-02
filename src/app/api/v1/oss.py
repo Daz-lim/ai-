@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 router = APIRouter()
 
+
 # 从环境变量中加载凭证信息，用于身份验证
 credentials_provider = oss.credentials.EnvironmentVariableCredentialsProvider()
 

@@ -19,10 +19,12 @@ dependencies = [
     { name = "langchain-openai" },
     { name = "langchain-openrouter" },
     { name = "langchain-tavily" },
+    { name = "langchain-text-splitters" },
     { name = "langgraph" },
     { name = "langgraph-checkpoint-postgres" },
     { name = "langgraph-checkpoint-sqlite" },
     { name = "langgraph-cli", extra = ["inmem"] },
+    { name = "mineru-open-sdk" },
     { name = "mypy" },
     { name = "notebook" },
     { name = "psycopg", extra = ["binary"] },
@@ -37,10 +39,12 @@ requires-dist = [
     { name = "langchain-openai", specifier = ">=1.6.0" },
     { name = "langchain-openrouter", specifier = ">=0.2.8" },
     { name = "langchain-tavily", specifier = ">=0.2.18" },
+    { name = "langchain-text-splitters", specifier = ">=1.1.2" },
     { name = "langgraph", specifier = ">=1.2.11" },
     { name = "langgraph-checkpoint-postgres", specifier = ">=3.1.2" },
     { name = "langgraph-checkpoint-sqlite", specifier = ">=3.1.1" },
     { name = "langgraph-cli", extras = ["inmem"], specifier = ">=0.4.31" },
+    { name = "mineru-open-sdk", specifier = ">=0.2.5" },
     { name = "mypy", specifier = ">=2.3.1" },
     { name = "notebook", specifier = ">=7.6.2" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
@@ -1729,6 +1733,18 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-text-splitters"
+version = "1.1.2"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+dependencies = [
+    { name = "langchain-core" },
+]
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/26/9f/6c545900fefb7b00ddfa3f16b80d61338a0ec68c31c5451eeeab99082760/langchain_text_splitters-1.1.2.tar.gz", hash = "sha256:782a723db0a4746ac91e251c7c1d57fd23636e4f38ed733074e28d7a86f41627", size = 293580, upload-time = "2026-04-16T14:20:39.162Z" }
+wheels = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/d3/26/1ef06f56198d631296d646a6223de35bcc6cf9795ceb2442816bc963b84c/langchain_text_splitters-1.1.2-py3-none-any.whl", hash = "sha256:a2de0d799ff31886429fd6e2e0032df275b60ec817c19059a7b46181cc1c2f10", size = 35903, upload-time = "2026-04-16T14:20:38.243Z" },
+]
+
+[[package]]
 name = "langgraph"
 version = "1.2.11"
 source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
@@ -2116,6 +2132,18 @@ dependencies = [
 sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/bd/c0/9f7c9a46090390368a4d7bcb76bb87a4a36c421e4c0792cdb53486ffac7a/matplotlib_inline-0.2.2.tar.gz", hash = "sha256:72f3fe8fce36b70d4a5b612f899090cd0401deddc4ea90e1572b9f4bfb058c79", size = 8150, upload-time = "2026-05-08T17:33:33.49Z" }
 wheels = [
     { url = "https://pypi.tuna.tsinghua.edu.cn/packages/41/09/5b161152e2d90f7b87f781c2e1267494aef9c32498df793f73ad0a0a494a/matplotlib_inline-0.2.2-py3-none-any.whl", hash = "sha256:3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6", size = 9534, upload-time = "2026-05-08T17:33:32.055Z" },
+]
+
+[[package]]
+name = "mineru-open-sdk"
+version = "0.2.5"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+dependencies = [
+    { name = "httpx" },
+]
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/64/5b/be9b0ae9f515132741f91b64f3de7dcb448d8701503b82e3fee72f0aa402/mineru_open_sdk-0.2.5.tar.gz", hash = "sha256:430baeacae3f18537edb62e69532620ce7fbead7d43f72b986d0cb1cc7932ee9", size = 32092, upload-time = "2026-04-10T13:51:49.642Z" }
+wheels = [
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/96/dd/667e108350a0b4683e913d2b15b21da3b3117469f586bb0652c9cbc2754d/mineru_open_sdk-0.2.5-py3-none-any.whl", hash = "sha256:db22bb764318eb3167d4cfb28849df70159b76a0ad268648ad91e9f2d47c0c1c", size = 19553, upload-time = "2026-04-10T13:51:47.648Z" },
 ]
 
 [[package]]

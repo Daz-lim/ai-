@@ -4,9 +4,9 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.v1 import chat
-from app.api.v1 import oss
-from app.common.logger import setup_logging
+from api.v1 import chat
+from api.v1 import oss
+from common.logger import setup_logging
 
 # 初始化日志配置
 setup_logging()
